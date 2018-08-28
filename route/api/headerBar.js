@@ -4,6 +4,7 @@ const DB = require('../../module/mongodb/db')
 
 router.get('/', async ctx => {
 
+    // 查询headerbar数据 返回给前端
     let result = await DB.find('headerBar' ,[{}])
 
     ctx.body = result
