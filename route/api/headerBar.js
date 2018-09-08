@@ -2,6 +2,8 @@
 const router = require('koa-router')()
 const DB = require('../../module/mongodb/db')
 
+
+// 查询
 router.get('/', async ctx => {
 
     // 查询headerbar数据 返回给前端
@@ -9,6 +11,8 @@ router.get('/', async ctx => {
 
     ctx.body = result
 })
+
+
 
 module.exports = router.routes()
 
